@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @Slf4j
-@RestControllerAdvice(annotations = {RestController.class}) // 이 클래스는 모든 @RestController에서 발생하는 예외를 처리한다
+@RestControllerAdvice(annotations = {RestController.class}) // 이 클래스는 모든 @RestController에서 발생하는 예외를 감지 및 처리한다
 public class ExceptionAdvice extends ResponseEntityExceptionHandler {
 
     @org.springframework.web.bind.annotation.ExceptionHandler

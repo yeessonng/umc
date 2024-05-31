@@ -14,7 +14,7 @@ import umc.spring.service.TempService.TempQueryService;
 @RequiredArgsConstructor
 public class TempRestController {
 
-    private final TempQueryService tempQueryService;
+    private final TempQueryService tempQueryService; // 컨트롤러는 인터페이스에 의존
 
     @GetMapping("/test")
     public ApiResponse<TempResponse.TempTestDTO> testAPI(){
