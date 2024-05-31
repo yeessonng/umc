@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import umc.spring.apiPayload.ApiResponse;
 import umc.spring.converter.TempConverter;
+import umc.spring.service.TempService.TempQueryServiceImpl;
 import umc.spring.web.dto.TempResponse;
 import umc.spring.service.TempService.TempQueryService;
 
