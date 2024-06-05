@@ -11,7 +11,7 @@ import umc.spring.service.TempService.TempQueryService;
 
 @RestController
 @RequestMapping("/temp")
-@RequiredArgsConstructor
+@RequiredArgsConstructor //final 필드나 @NonNull 필드에 대한 생성자를 자동으로 생성
 public class TempRestController {
 
     private final TempQueryService tempQueryService; // 컨트롤러는 인터페이스에 의존
