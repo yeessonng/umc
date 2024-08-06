@@ -1,6 +1,8 @@
-package umc.spring.service.MemberService;
-import umc.spring.domain.User;
+package umc.spring.service.UserService;
 
-public interface MemberCommandService {
-    Member 
+import umc.spring.domain.User;
+import umc.spring.web.dto.UserRequestDTO;
+
+public interface UserCommandService {
+    User JoinUser(UserRequestDTO.JoinDTO request);
 }
