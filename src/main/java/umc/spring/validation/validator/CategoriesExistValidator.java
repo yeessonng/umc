@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CategoriesExistValidator implements ConstraintValidator<ExistCategories, List<Long>> { //검증 대상이 List<Long>
 
-    private final FoodRepository foodRepository;
+    //private final FoodRepository foodRepository;
     private final UserCommandServiceImpl userCommandService;
 
     @Override

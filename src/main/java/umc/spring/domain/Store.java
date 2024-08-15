@@ -40,4 +40,11 @@ public class Store extends BaseEntity {
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
     private List<Review> missionList = new ArrayList<>();
+
+    public void setDistrict(District district) {
+        if(this.district == null)
+            district.getStoreList().remove(this);
+        this.district = district;
+        district.getStoreList().add(this);
+    }
 }

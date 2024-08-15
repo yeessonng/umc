@@ -41,14 +41,11 @@ public class UserCommandServiceImpl implements UserCommandService {
         return userRepository.save(newUser);
     }
 
+    @Override
     public Boolean ConfirmIsValid(List<Long> values)
     {
         boolean isValid = values.stream()
                 .allMatch(value -> foodRepository.existsById(value));
-
         return isValid;
     }
-
-
-
 }
